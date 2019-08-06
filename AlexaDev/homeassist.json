@@ -1,0 +1,1003 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "non linking",
+            "intents": [
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "Meals",
+                    "slots": [
+                        {
+                            "name": "Food",
+                            "type": "Food"
+                        },
+                        {
+                            "name": "date",
+                            "type": "AMAZON.DATE"
+                        },
+                        {
+                            "name": "time",
+                            "type": "AMAZON.TIME"
+                        }
+                    ],
+                    "samples": [
+                        "I want {Food} on {date} {time}",
+                        "I want to eat on {date}",
+                        "I want {Food} on {date}",
+                        "I want {Food}",
+                        "I would like to have {Food}",
+                        "I would like to book a meal on {date}",
+                        "I would like book a meal for {Food} on {date}",
+                        "I would like to book a meal"
+                    ]
+                },
+                {
+                    "name": "HomeAssistQuestions",
+                    "slots": [
+                        {
+                            "name": "id",
+                            "type": "AMAZON.NUMBER"
+                        },
+                        {
+                            "name": "feelingRating",
+                            "type": "Test"
+                        },
+                        {
+                            "name": "sleepingRating",
+                            "type": "Test"
+                        },
+                        {
+                            "name": "breathingRating",
+                            "type": "Test"
+                        },
+                        {
+                            "name": "SwollenRating",
+                            "type": "Test"
+                        }
+                    ],
+                    "samples": [
+                        "record my stats",
+                        "my sleeping level is a {sleepingRating}",
+                        "today my swollen level is a {SwollenRating}",
+                        "my swollen level is at {SwollenRating}",
+                        "my breathing is a {breathingRating} today",
+                        "Today my breathing is a {breathingRating}",
+                        "my sleeping quality is at {sleepingRating}",
+                        "My feet are swollen today and it is at {SwollenRating}",
+                        "My breathing today is {breathingRating}",
+                        "my sleeping quality is bad today it is at {sleepingRating}",
+                        "Update my health status",
+                        "my feeling is at a {feelingRating} today",
+                        "My feeling today is a {feelingRating}",
+                        "I am feeling at a {feelingRating}",
+                        "My health status",
+                        "I want to update my health status",
+                        "I want to input my data",
+                        "I want to check my health today"
+                    ]
+                },
+                {
+                    "name": "CheckSchedule",
+                    "slots": [
+                        {
+                            "name": "date",
+                            "type": "AMAZON.DATE"
+                        }
+                    ],
+                    "samples": [
+                        "check my schedule",
+                        "I want to check my schedule",
+                        "Get my calendar",
+                        "What are my upcoming events",
+                        "Show my calendar",
+                        "Get my schedule",
+                        "what is my schedule"
+                    ]
+                },
+                {
+                    "name": "FeelingQuestions",
+                    "slots": [
+                        {
+                            "name": "feelingRating",
+                            "type": "Test",
+                            "samples": [
+                                "i want to update my score to {feelingRating}",
+                                "{feelingRating}"
+                            ]
+                        }
+                    ],
+                    "samples": [
+                        "I want to update my feeling score",
+                        "update my feeling score at {feelingRating}",
+                        "I want to let you know my feeling score from today was a {feelingRating}",
+                        "I want to enter my feeling score to a {feelingRating}",
+                        "I want to update my feeling score to a {feelingRating}",
+                        "Today my feeling is at {feelingRating}",
+                        "My feeling score today at {feelingRating}",
+                        "My feeling today is at {feelingRating}",
+                        "I am feeling at {feelingRating} today."
+                    ]
+                },
+                {
+                    "name": "SleepingQuestions",
+                    "slots": [
+                        {
+                            "name": "sleepingRating",
+                            "type": "Test",
+                            "samples": [
+                                "I want to update my sleeping score to {sleepingRating}",
+                                "{sleepingRating}"
+                            ]
+                        }
+                    ],
+                    "samples": [
+                        "I want to update my sleeping score",
+                        "I want to enter my sleeping score to a {sleepingRating}",
+                        "I want to update my sleeping score to a {sleepingRating}",
+                        "Update my sleeping score to a {sleepingRating}",
+                        "Last night my sleeping score was a {sleepingRating}",
+                        "Last night my score was at {sleepingRating}",
+                        "My score from last night was at {sleepingRating}",
+                        "My sleeping quality is at {sleepingRating}",
+                        "My sleeping level is at {sleepingRating}"
+                    ]
+                },
+                {
+                    "name": "BreathingQuestions",
+                    "slots": [
+                        {
+                            "name": "breathingRating",
+                            "type": "Test",
+                            "samples": [
+                                "I want to update my breathing score to {breathingRating}",
+                                "{breathingRating}"
+                            ]
+                        }
+                    ],
+                    "samples": [
+                        "I want to update my breathing score",
+                        "Enter my breathing score at {breathingRating}",
+                        "My breathing level is at {breathingRating}",
+                        "Today my breathing is at {breathingRating}",
+                        "update my breathing score at {breathingRating}",
+                        "I want to enter my breathing score at {breathingRating}",
+                        "I want to update my breathing score at {breathingRating}"
+                    ]
+                },
+                {
+                    "name": "SwollenQuestions",
+                    "slots": [
+                        {
+                            "name": "SwollenRating",
+                            "type": "Test",
+                            "samples": [
+                                "I want to update my swollen score to {SwollenRating}",
+                                "{SwollenRating}"
+                            ]
+                        }
+                    ],
+                    "samples": [
+                        "I want to update my swollen score",
+                        "My feet are swollen today and it is at {SwollenRating}",
+                        "Today my swollen level is at {SwollenRating}",
+                        "My swollen level is at {SwollenRating}",
+                        "Update my swollen level at {SwollenRating}",
+                        "I want to enter my swollen level at {SwollenRating}",
+                        "I want to update my swollen level at {SwollenRating}"
+                    ]
+                },
+                {
+                    "name": "AMAZON.YesIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NoIntent",
+                    "samples": []
+                },
+                {
+                    "name": "Schedule",
+                    "slots": [
+                        {
+                            "name": "req",
+                            "type": "request"
+                        }
+                    ],
+                    "samples": [
+                        "I would like to make a {req}",
+                        "I would like to make an appointment"
+                    ]
+                },
+                {
+                    "name": "Ride",
+                    "slots": [
+                        {
+                            "name": "food",
+                            "type": "Food"
+                        }
+                    ],
+                    "samples": [
+                        "switch version"
+                    ]
+                },
+                {
+                    "name": "Appointment",
+                    "slots": [],
+                    "samples": []
+                },
+                {
+                    "name": "HelloWorldIntent",
+                    "slots": [],
+                    "samples": [
+                        "hello testing world",
+                        "hello world"
+                    ]
+                },
+                {
+                    "name": "AddReminderIntent",
+                    "slots": [],
+                    "samples": [
+                        "test my reminder"
+                    ]
+                },
+                {
+                    "name": "AMAZON.MoreIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateSettingsIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NextIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.PageUpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.PageDownIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.PreviousIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.ScrollRightIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.ScrollDownIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.ScrollLeftIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.ScrollUpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "CreateReminderIntent",
+                    "slots": [
+                        {
+                            "name": "date",
+                            "type": "AMAZON.DATE",
+                            "samples": [
+                                "{date}"
+                            ]
+                        },
+                        {
+                            "name": "time",
+                            "type": "AMAZON.TIME",
+                            "samples": [
+                                "{time}"
+                            ]
+                        }
+                    ],
+                    "samples": [
+                        "create a reminder",
+                        "set a reminder",
+                        "make an appointment",
+                        "make an appoinment on {date} at {time}",
+                        "make an appointment for {date} at {time}"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "CenterName",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "San Pedro"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Willowbrook"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "Test",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "stop"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "skip"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "10",
+                                "synonyms": [
+                                    "ten"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "9",
+                                "synonyms": [
+                                    "nine"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "8",
+                                "synonyms": [
+                                    "eight"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "7",
+                                "synonyms": [
+                                    "seven"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "6",
+                                "synonyms": [
+                                    "six"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "5",
+                                "synonyms": [
+                                    "five"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "4",
+                                "synonyms": [
+                                    "four"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "3",
+                                "synonyms": [
+                                    "three"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "2",
+                                "synonyms": [
+                                    "two"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "1",
+                                "synonyms": [
+                                    "one"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "request",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "ride"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "meal"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "appointment"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "Food",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "Salad"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Fish"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Pork"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Chicken"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Meat"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "dialog": {
+            "intents": [
+                {
+                    "name": "Meals",
+                    "confirmationRequired": true,
+                    "prompts": {
+                        "confirmation": "Confirm.Intent.1252478852457"
+                    },
+                    "slots": [
+                        {
+                            "name": "Food",
+                            "type": "Food",
+                            "confirmationRequired": false,
+                            "elicitationRequired": false,
+                            "prompts": {}
+                        },
+                        {
+                            "name": "date",
+                            "type": "AMAZON.DATE",
+                            "confirmationRequired": false,
+                            "elicitationRequired": false,
+                            "prompts": {}
+                        },
+                        {
+                            "name": "time",
+                            "type": "AMAZON.TIME",
+                            "confirmationRequired": false,
+                            "elicitationRequired": false,
+                            "prompts": {}
+                        }
+                    ]
+                },
+                {
+                    "name": "HomeAssistQuestions",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "id",
+                            "type": "AMAZON.NUMBER",
+                            "confirmationRequired": false,
+                            "elicitationRequired": false,
+                            "prompts": {}
+                        },
+                        {
+                            "name": "feelingRating",
+                            "type": "Test",
+                            "confirmationRequired": false,
+                            "elicitationRequired": false,
+                            "prompts": {}
+                        },
+                        {
+                            "name": "sleepingRating",
+                            "type": "Test",
+                            "confirmationRequired": false,
+                            "elicitationRequired": false,
+                            "prompts": {}
+                        },
+                        {
+                            "name": "breathingRating",
+                            "type": "Test",
+                            "confirmationRequired": false,
+                            "elicitationRequired": false,
+                            "prompts": {}
+                        },
+                        {
+                            "name": "SwollenRating",
+                            "type": "Test",
+                            "confirmationRequired": false,
+                            "elicitationRequired": false,
+                            "prompts": {}
+                        }
+                    ]
+                },
+                {
+                    "name": "FeelingQuestions",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "feelingRating",
+                            "type": "Test",
+                            "confirmationRequired": true,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "confirmation": "Confirm.Slot.1485148143250.596054937863",
+                                "elicitation": "Elicit.Slot.1485148143250.596054937863"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "SleepingQuestions",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "sleepingRating",
+                            "type": "Test",
+                            "confirmationRequired": true,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "confirmation": "Confirm.Slot.386548538158.407302707024",
+                                "elicitation": "Elicit.Slot.386548538158.407302707024"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "BreathingQuestions",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "breathingRating",
+                            "type": "Test",
+                            "confirmationRequired": true,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "confirmation": "Confirm.Slot.1399688671915.1171605284793",
+                                "elicitation": "Elicit.Slot.1399688671915.1171605284793"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "SwollenQuestions",
+                    "confirmationRequired": true,
+                    "prompts": {
+                        "confirmation": "Confirm.Intent.566362725435"
+                    },
+                    "slots": [
+                        {
+                            "name": "SwollenRating",
+                            "type": "Test",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.566362725435.1524079540492"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "CreateReminderIntent",
+                    "confirmationRequired": true,
+                    "prompts": {
+                        "confirmation": "Confirm.Intent.1406459813311"
+                    },
+                    "slots": [
+                        {
+                            "name": "date",
+                            "type": "AMAZON.DATE",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.627001460169.276359323218"
+                            }
+                        },
+                        {
+                            "name": "time",
+                            "type": "AMAZON.TIME",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.627001460169.146998988465"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "delegationStrategy": "SKILL_RESPONSE"
+        },
+        "prompts": [
+            {
+                "id": "Confirm.Intent.1252478852457",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Just to confirm you would like {Food} on {date} {time}"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.662805884718.465136228368",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "on the scale of one to ten with one being the best, how are you feeling today?"
+                    }
+                ]
+            },
+            {
+                "id": "Confirm.Slot.662805884718.465136228368",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "just to be confirm, your answer was {feelingRating} ?"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "you said {feelingRating} , right?"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "your number is a {feelingRating} , right "
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "your feeling today is {feelingRating} , correct?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.662805884718.1516672868789",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "on the scale of one to ten with one being the best, are you having trouble sleeping at night?"
+                    }
+                ]
+            },
+            {
+                "id": "Confirm.Slot.662805884718.1516672868789",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "your trouble sleeping at night is a {sleepingRating} , correct?"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "your response was {sleepingRating} , right?"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "your answer was {sleepingRating} , correct?"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "just to confirm, you answered {sleepingRating} , right?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.662805884718.1364151119478",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "on the scale of one to ten with one being the best, are you having shortness of breath?"
+                    }
+                ]
+            },
+            {
+                "id": "Confirm.Slot.662805884718.1364151119478",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "you said {breathingRating} , correct?"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "you answer is {breathingRating} , right ?"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "Your breathing rating is {breathingRating} , correct ?"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "just to confirm, your breathing rating is at {breathingRating} , right ?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.662805884718.830087018462",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "on the scale of one to ten with one being the best, are your feet swollen?"
+                    }
+                ]
+            },
+            {
+                "id": "Confirm.Slot.662805884718.830087018462",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "your rating is at {SwollenRating} , right ?"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "your response is {SwollenRating} , right ?"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "your answer is {SwollenRating} , correct?"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "Just to confirm, your number is {SwollenRating} , right?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.597307233420.115118979054",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "which location you want to order from ?"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "where you want to order from ?"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "which center you want to order from?"
+                    }
+                ]
+            },
+            {
+                "id": "Confirm.Slot.597307233420.115118979054",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "you selected to order from {CenterName} , correct?"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "the location you choose is {CenterName} , right "
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "you want to make a order at {CenterName} , correct ?"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "Just to confirm, you want to order from {CenterName} , right?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.382449851139.1350546133792",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Can you give me your patient ID number?"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "Please say your patient ID number ?"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "May I get your patient ID number?"
+                    }
+                ]
+            },
+            {
+                "id": "Confirm.Slot.382449851139.1350546133792",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Is {num}  your patient ID, correct?"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "your patient ID is {num} , right ?"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "Just to confirm, your patient ID is {num} , Correct ?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.1394041784493.47369839595",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "what is your patient id?"
+                    }
+                ]
+            },
+            {
+                "id": "Confirm.Slot.726893269080.755898332831",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Are you sure this is your patient id?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.591436161680.103545923519",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "what is your patient id?"
+                    }
+                ]
+            },
+            {
+                "id": "Confirm.Slot.591436161680.103545923519",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Are you sure this is your id?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.1485148143250.596054937863",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "What do you want to update your feeling rating to?"
+                    }
+                ]
+            },
+            {
+                "id": "Confirm.Slot.1485148143250.596054937863",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Are you sure you want to update your score to {feelingRating}"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.386548538158.407302707024",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "What do you want to update your sleeping score to?"
+                    }
+                ]
+            },
+            {
+                "id": "Confirm.Slot.386548538158.407302707024",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Are you sure you want to update your sleeping score?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.1399688671915.1171605284793",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "What do you want to update your breathing score to?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.566362725435.1524079540492",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "What do you want to update your swollen score to?"
+                    }
+                ]
+            },
+            {
+                "id": "Confirm.Slot.1399688671915.1171605284793",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Are you sure you want to update your breathing score?"
+                    }
+                ]
+            },
+            {
+                "id": "Confirm.Intent.566362725435",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Are you sure you want to update your swollen score?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.627001460169.146998988465",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "what time do you want your appointment on?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.627001460169.276359323218",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "what day would you like your appointment on?"
+                    }
+                ]
+            },
+            {
+                "id": "Confirm.Intent.1406459813311",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Would you like me to remind you that you have an appointment?"
+                    }
+                ]
+            }
+        ]
+    }
+}

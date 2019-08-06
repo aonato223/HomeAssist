@@ -1,0 +1,5 @@
+AlexaDev folder contains the files for the Alexa Developer Console/Skills Kit
+https://developer.amazon.com/
+
+AWS folders contains the files for the AWS Lambda
+https://aws.amazon.com/education/awseducate/
